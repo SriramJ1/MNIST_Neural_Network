@@ -1,0 +1,522 @@
+----- Building -----
+ 
+:: initializing oneAPI environment ...
+   slurm_script: BASH_VERSION = 5.2.21(1)-release
+   args: Using "$@" for setvars.sh arguments: --force
+:: advisor -- latest
+:: ccl -- latest
+:: compiler -- latest
+:: dal -- latest
+:: debugger -- latest
+:: dev-utilities -- latest
+:: dnnl -- latest
+:: dpcpp-ct -- latest
+:: dpl -- latest
+:: ipp -- latest
+:: ippcp -- latest
+:: ishmem -- latest
+:: mkl -- latest
+:: mpi -- latest
+:: pti -- latest
+:: tbb -- latest
+:: umf -- latest
+:: vtune -- latest
+:: oneAPI environment initialized ::
+ 
+-- MKL_VERSION: 2025.2.0
+-- MKL_ROOT: /opt/intel/oneapi/mkl/2025.2
+-- MKL_ARCH: intel64
+-- MKL_LINK: dynamic
+-- MKL_INTERFACE_FULL: intel_ilp64
+-- MKL_THREADING: intel_thread
+-- MKL_MPI: intelmpi
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_scalapack_ilp64.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_cdft_core.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_intel_ilp64.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_intel_thread.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_core.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_blacs_intelmpi_ilp64.so
+-- Found /opt/intel/oneapi/compiler/2025.2/lib/libiomp5.so
+-- MKL found: /opt/intel/oneapi/mkl/2025.2
+-- Failed to find LLVM FileCheck
+-- Google Benchmark version: v1.9.4, normalized to 1.9.4
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Performing Test HAVE_PTHREAD_AFFINITY -- success
+-- Looking for Google Test sources
+-- Looking for Google Test sources in /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-src/googletest
+-- Did not find Google Test sources! Fetching from web...
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-build/third_party/googletest
+[ 11%] Performing update step for 'googletest'
+-- Already at requested tag: v1.15.2
+[ 22%] No patch step for 'googletest'
+[ 33%] No configure step for 'googletest'
+[ 44%] No build step for 'googletest'
+[ 55%] No install step for 'googletest'
+[ 66%] No test step for 'googletest'
+[ 77%] Completed 'googletest'
+[100%] Built target googletest
+-- CPM: Adding package nvbench@ (main)
+-- Testing CXX17 Support: TRUE
+-- Testing CXX20 Support: TRUE
+-- Testing CUDA17 Support: TRUE
+-- Testing CUDA20 Support: TRUE
+-- Creating symlink from /home/janars1/Labs/labs/project-4sp4-2025-21/compile_commands.json to /home/janars1/Labs/labs/project-4sp4-2025-21/build/compile_commands.json...
+-- CPM: Adding package fmt@11.2.0 (11.2.0)
+-- {fmt} version: 11.2.0
+-- Build type: Release
+-- CPM: Adding package nlohmann_json@3.12.0 (3.12.0)
+-- NVBench CUDA architectures: native
+-- Configuring done (2.1s)
+-- Generating done (2.3s)
+-- Build files have been written to: /home/janars1/Labs/labs/project-4sp4-2025-21/build
+-- MKL_VERSION: 2025.2.0
+-- MKL_ROOT: /opt/intel/oneapi/mkl/2025.2
+-- MKL_ARCH: intel64
+-- MKL_LINK: dynamic
+-- MKL_INTERFACE_FULL: intel_ilp64
+-- MKL_THREADING: intel_thread
+-- MKL_MPI: intelmpi
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_scalapack_ilp64.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_cdft_core.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_intel_ilp64.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_intel_thread.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_core.so
+-- Found /opt/intel/oneapi/mkl/2025.2/lib/libmkl_blacs_intelmpi_ilp64.so
+-- Found /opt/intel/oneapi/compiler/2025.2/lib/libiomp5.so
+-- MKL found: /opt/intel/oneapi/mkl/2025.2
+-- Failed to find LLVM FileCheck
+-- Google Benchmark version: v1.9.4, normalized to 1.9.4
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Performing Test HAVE_PTHREAD_AFFINITY -- success
+-- Looking for Google Test sources
+-- Looking for Google Test sources in /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-src/googletest
+-- Did not find Google Test sources! Fetching from web...
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-build/third_party/googletest
+[ 11%] Performing update step for 'googletest'
+-- Already at requested tag: v1.15.2
+[ 22%] No patch step for 'googletest'
+[ 33%] No configure step for 'googletest'
+[ 44%] No build step for 'googletest'
+[ 55%] No install step for 'googletest'
+[ 66%] No test step for 'googletest'
+[ 77%] Completed 'googletest'
+[100%] Built target googletest
+-- CPM: Adding package nvbench@ (main)
+-- Testing CXX17 Support: TRUE
+-- Testing CXX20 Support: TRUE
+-- Testing CUDA17 Support: TRUE
+-- Testing CUDA20 Support: TRUE
+-- Creating symlink from /home/janars1/Labs/labs/project-4sp4-2025-21/compile_commands.json to /home/janars1/Labs/labs/project-4sp4-2025-21/build/compile_commands.json...
+-- CPM: Adding package fmt@11.2.0 (11.2.0)
+-- {fmt} version: 11.2.0
+-- Build type: Release
+-- CPM: Adding package nlohmann_json@3.12.0 (3.12.0)
+-- NVBench CUDA architectures: native
+-- Configuring done (1.7s)
+-- Generating done (1.9s)
+-- Build files have been written to: /home/janars1/Labs/labs/project-4sp4-2025-21/build
+[  1%] Generate git revision file for nvbench_git_revision
+[  2%] Built target fmt
+[  3%] Built target gtest
+[  3%] Built target nvbench_git_revision_compute_git_info
+[  4%] Built target gtest_main
+[  9%] Built target gmock
+[ 15%] Built target benchmark
+[ 17%] Building CXX object test/CMakeFiles/project_gemv_test.dir/__/src/gemv.cpp.o
+[ 17%] Building CXX object test/CMakeFiles/project_gemm_test.dir/gemm_test.cpp.o
+[ 17%] Building CXX object test/CMakeFiles/project_gemv_test.dir/gemv_test.cpp.o
+[ 17%] Building CXX object test/CMakeFiles/project_gemm_test.dir/__/src/gemm.cpp.o
+[ 18%] Building CXX object test/CMakeFiles/project_dense_nn_test.dir/__/src/dense_nn.cpp.o
+[ 19%] Built target gmock_main
+[ 19%] Building CXX object CMakeFiles/project.dir/main_bench.cpp.o
+[ 20%] Building CXX object CMakeFiles/nn_cpu.dir/nn_cpu_bench.cpp.o
+[ 38%] Built target nvbench
+[ 39%] Built target benchmark_main
+[ 40%] Built target output_test_helper
+[ 41%] Built target cxx11_test
+[ 42%] Built target benchmark_test
+[ 43%] Built target spec_arg_test
+[ 44%] Built target spec_arg_verbosity_test
+[ 45%] Built target benchmark_setup_teardown_test
+[ 46%] Built target filter_test
+[ 46%] Building CXX object test/CMakeFiles/project_dense_nn_test.dir/__/src/gemm.cpp.o
+[ 47%] Built target benchmark_min_time_flag_time_test
+/home/janars1/Labs/labs/project-4sp4-2025-21/main_bench.cpp: In function ‘void BM_GEMM(benchmark::State&)’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/main_bench.cpp:30:124: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int&, int&)’
+   30 |         swiftware::hpp::gemm(m, n, k, A->data.data(), B->data.data(), C->data.data(), swiftware::hpp::ScheduleParams(t1, t2));
+      |                                                                                                                            ^
+In file included from /home/janars1/Labs/labs/project-4sp4-2025-21/include/utils.h:11,
+                 from /home/janars1/Labs/labs/project-4sp4-2025-21/main_bench.cpp:9:
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/nn_cpu_bench.cpp: In function ‘void BM_DENSENN(benchmark::State&)’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/nn_cpu_bench.cpp:25:81: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int64_t, int64_t)’
+   25 |     swiftware::hpp::ScheduleParams scheduleParams(state.range(0), state.range(1));
+      |                                                                                 ^
+In file included from /home/janars1/Labs/labs/project-4sp4-2025-21/include/utils.h:11,
+                 from /home/janars1/Labs/labs/project-4sp4-2025-21/nn_cpu_bench.cpp:9:
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+[ 48%] Built target benchmark_min_time_flag_iters_test
+gmake[2]: *** [CMakeFiles/project.dir/build.make:135: CMakeFiles/project.dir/main_bench.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:515: CMakeFiles/project.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 49%] Built target options_test
+[ 49%] Building CXX object CMakeFiles/nn_cpu.dir/src/dense_nn.cpp.o
+gmake[2]: *** [CMakeFiles/nn_cpu.dir/build.make:135: CMakeFiles/nn_cpu.dir/nn_cpu_bench.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 50%] Building CXX object test/CMakeFiles/project_dense_nn_test.dir/__/src/utils.cpp.o
+[ 50%] Building CXX object test/CMakeFiles/project_dense_nn_test.dir/__/src/gemv.cpp.o
+[ 50%] Building CXX object test/CMakeFiles/project_dense_nn_test.dir/denseNN_test.cpp.o
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp: In member function ‘virtual void swiftware::hpp::GemmTest_BasicTest_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp:22:27: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   22 |     ScheduleParams sp(2, 2);
+      |                           ^
+In file included from /home/janars1/Labs/labs/project-4sp4-2025-21/include/gemm.h:14,
+                 from /home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp:8:
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp: In member function ‘virtual void swiftware::hpp::GemmTest_NegativeValues_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp:37:26: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   37 |     ScheduleParams sp(1,1);
+      |                          ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp: In member function ‘virtual void swiftware::hpp::GemmTest_RectangularMatrices_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemm_test.cpp:55:26: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   55 |     ScheduleParams sp(1,1);
+      |                          ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp: In member function ‘virtual void swiftware::hpp::GemvTest_BasicTest_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp:24:27: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   24 |     ScheduleParams sp(2, 2);
+      |                           ^
+In file included from /home/janars1/Labs/labs/project-4sp4-2025-21/include/gemv.h:13,
+                 from /home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp:9:
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp: In member function ‘virtual void swiftware::hpp::GemvTest_NegativeValues_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp:40:26: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   40 |     ScheduleParams sp(1,1);
+      |                          ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp: In member function ‘virtual void swiftware::hpp::GemvTest_RectangularMatrix_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp:56:26: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   56 |     ScheduleParams sp(1,1);
+      |                          ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp: In member function ‘virtual void swiftware::hpp::GemvTest_TallMatrix_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/gemv_test.cpp:71:26: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   71 |     ScheduleParams sp(1,1);
+      |                          ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/src/dense_nn.cpp:204:2: error: expected ‘}’ at end of input
+  204 | }
+      |  ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/src/dense_nn.cpp:14:26: note: to match this ‘{’
+   14 | namespace swiftware::hpp {
+      |                          ^
+gmake[2]: *** [CMakeFiles/nn_cpu.dir/build.make:93: CMakeFiles/nn_cpu.dir/src/dense_nn.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:547: CMakeFiles/nn_cpu.dir/all] Error 2
+gmake[2]: *** [test/CMakeFiles/project_gemm_test.dir/build.make:79: test/CMakeFiles/project_gemm_test.dir/gemm_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:2640: test/CMakeFiles/project_gemm_test.dir/all] Error 2
+gmake[2]: *** [test/CMakeFiles/project_gemv_test.dir/build.make:79: test/CMakeFiles/project_gemv_test.dir/gemv_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:2673: test/CMakeFiles/project_gemv_test.dir/all] Error 2
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/denseNN_test.cpp: In member function ‘virtual void swiftware::hpp::DenseNNTest_GemmBasicTest_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/denseNN_test.cpp:26:27: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   26 |   ScheduleParams Sp(-1, -1);
+      |                           ^
+In file included from /home/janars1/Labs/labs/project-4sp4-2025-21/include/dense_nn.h:10,
+                 from /home/janars1/Labs/labs/project-4sp4-2025-21/test/denseNN_test.cpp:8:
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/denseNN_test.cpp: In member function ‘virtual void swiftware::hpp::DenseNNTest_GemmMultiSampleTest_Test::TestBody()’:
+/home/janars1/Labs/labs/project-4sp4-2025-21/test/denseNN_test.cpp:41:27: error: no matching function for call to ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int)’
+   41 |   ScheduleParams Sp(-1, -1);
+      |                           ^
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note: candidate: ‘swiftware::hpp::ScheduleParams::ScheduleParams(int, int, int)’
+   22 |   ScheduleParams(int TileSize1, int TileSize2, int VecTileSize): TileSize1(TileSize1), TileSize2(TileSize2), VecTileSize(VecTileSize) {}
+      |   ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:22:3: note:   candidate expects 3 arguments, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(const swiftware::hpp::ScheduleParams&)’
+   18 |  struct ScheduleParams {
+      |         ^~~~~~~~~~~~~~
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note: candidate: ‘constexpr swiftware::hpp::ScheduleParams::ScheduleParams(swiftware::hpp::ScheduleParams&&)’
+/home/janars1/Labs/labs/project-4sp4-2025-21/include/def.h:18:9: note:   candidate expects 1 argument, 2 provided
+gmake[2]: *** [test/CMakeFiles/project_dense_nn_test.dir/build.make:79: test/CMakeFiles/project_dense_nn_test.dir/denseNN_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:2706: test/CMakeFiles/project_dense_nn_test.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2
+---- Copying Weights and Dataset -----
+---- Running NN, Python----
+Requirement already satisfied: numpy in ./venv/lib/python3.12/site-packages (from -r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 1)) (2.3.5)
+Requirement already satisfied: matplotlib in ./venv/lib/python3.12/site-packages (from -r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (3.10.7)
+Requirement already satisfied: pandas in ./venv/lib/python3.12/site-packages (from -r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 3)) (2.3.3)
+Requirement already satisfied: contourpy>=1.0.1 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (25.0)
+Requirement already satisfied: pillow>=8 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (12.0.0)
+Requirement already satisfied: pyparsing>=3 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (3.2.5)
+Requirement already satisfied: python-dateutil>=2.7 in ./venv/lib/python3.12/site-packages (from matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./venv/lib/python3.12/site-packages (from pandas->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 3)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./venv/lib/python3.12/site-packages (from pandas->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 3)) (2025.2)
+Requirement already satisfied: six>=1.5 in ./venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib->-r /home/janars1/Labs/labs/project-4sp4-2025-21/script/requirements.txt (line 2)) (1.17.0)
+Reading CSV Data...
+Accuracy: 93.02%
+---- Running CPU ----
+2025-11-26T20:39:45-05:00
+Running /home/janars1/Labs/labs/project-4sp4-2025-21/build/project
+Run on (20 X 5300 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x20)
+  L1 Instruction 64 KiB (x20)
+  L2 Unified 3072 KiB (x20)
+  L3 Unified 30720 KiB (x1)
+Load Average: 0.77, 0.49, 0.43
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+----------------------------------------------------------------------------------------------------------------
+Benchmark                                                      Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              23.7 us         21.7 us            1 L1-dcache-loads=86.86k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              16.0 us         16.0 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              16.0 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10              15.9 us         15.9 us            1 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10_mean         16.7 us         16.5 us           10 L1-dcache-loads=86.6827k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10_median       15.9 us         15.9 us           10 L1-dcache-loads=86.663k
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10_stddev       2.47 us         1.84 us           10 L1-dcache-loads=62.2969
+BM_GEMM/40/40/40/-1/-1/iterations:1/repeats:10_cv          14.80 %         11.16 %            10 L1-dcache-loads=0.07%
+2025-11-26T20:39:45-05:00
+Running /home/janars1/Labs/labs/project-4sp4-2025-21/build/nn_cpu
+Run on (20 X 5300 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x20)
+  L1 Instruction 64 KiB (x20)
+  L2 Unified 3072 KiB (x20)
+  L3 Unified 30720 KiB (x1)
+Load Average: 0.77, 0.49, 0.43
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+-----------------------------------------------------------------------------------------
+Benchmark                                               Time             CPU   Iterations
+-----------------------------------------------------------------------------------------
+BM_DENSENN/32/32/iterations:1/repeats:5              4.17 us         1.77 us            1
+BM_DENSENN/32/32/iterations:1/repeats:5              2.07 us         1.38 us            1
+BM_DENSENN/32/32/iterations:1/repeats:5              1.52 us         1.01 us            1
+BM_DENSENN/32/32/iterations:1/repeats:5              1.43 us        0.860 us            1
+BM_DENSENN/32/32/iterations:1/repeats:5              1.47 us        0.838 us            1
+BM_DENSENN/32/32/iterations:1/repeats:5_mean         2.13 us         1.17 us            5
+BM_DENSENN/32/32/iterations:1/repeats:5_median       1.52 us         1.01 us            5
+BM_DENSENN/32/32/iterations:1/repeats:5_stddev       1.17 us        0.399 us            5
+BM_DENSENN/32/32/iterations:1/repeats:5_cv          54.87 %         34.06 %             5
+---- Running GPU----
+Note. to run the GPU part, you will need to first enable GPU by add -DGPU_ENABLED=ON
+# Devices
+
+## [0] `NVIDIA RTX 2000 Ada Generation`
+* SM Version: 890 (PTX Version: 890)
+* Number of SMs: 22
+* SM Default Clock Rate: 2130 MHz
+* Global Memory: 15960 MiB Free / 16067 MiB Total
+* Global Memory Bus Peak: 224 GB/sec (128-bit DDR @7001MHz)
+* Max Shared Memory: 100 KiB/SM, 48 KiB/Block
+* L2 Cache Size: 24576 KiB
+* Maximum Active Blocks: 24/SM
+* Maximum Active Threads: 1536/SM, 1024/Block
+* Available Registers: 65536/SM, 65536/Block
+* ECC Enabled: No
+
+# Log
+
+```
+Run:  [1/5] gemm [Device=0 n=256]
+Pass: Cold: 0.270971ms GPU, 0.286291ms CPU, 0.50s total GPU, 0.74s total wall, 1846x 
+Run:  [2/5] gemm [Device=0 n=512]
+Pass: Cold: 2.071424ms GPU, 2.084019ms CPU, 0.50s total GPU, 0.53s total wall, 242x 
+Run:  [3/5] gemm [Device=0 n=1024]
+Pass: Cold: 16.324945ms GPU, 16.337429ms CPU, 0.51s total GPU, 0.51s total wall, 31x 
+Run:  [4/5] gemm [Device=0 n=2048]
+Pass: Cold: 129.734379ms GPU, 129.746053ms CPU, 1.43s total GPU, 1.43s total wall, 11x 
+Run:  [5/5] gemm [Device=0 n=4096]
+Pass: Cold: 1026.316695ms GPU, 1026.321721ms CPU, 11.29s total GPU, 11.29s total wall, 11x 
+```
+
+# Benchmark Results
+
+## gemm
+
+### [0] NVIDIA RTX 2000 Ada Generation
+
+|  n   | Samples | Min GPU Time | Max GPU Time |  GPU Time  | Noise | Clock Rate | Clock Scaling |
+|------|---------|--------------|--------------|------------|-------|------------|---------------|
+|  256 |   1846x |   269.312 us |   272.608 us | 270.971 us | 0.23% |  1.620 GHz |        76.04% |
+|  512 |    242x |     2.070 ms |     2.075 ms |   2.071 ms | 0.06% |  1.620 GHz |        76.05% |
+| 1024 |     31x |    16.319 ms |    16.333 ms |  16.325 ms | 0.02% |  1.620 GHz |        76.05% |
+| 2048 |     11x |   129.726 ms |   129.748 ms | 129.734 ms | 0.00% |  1.620 GHz |        76.05% |
+| 4096 |     11x |      1.026 s |      1.027 s |    1.026 s | 0.01% |  1.620 GHz |        76.05% |
+# Devices
+
+## [0] `NVIDIA RTX 2000 Ada Generation`
+* SM Version: 890 (PTX Version: 890)
+* Number of SMs: 22
+* SM Default Clock Rate: 2130 MHz
+* Global Memory: 15960 MiB Free / 16067 MiB Total
+* Global Memory Bus Peak: 224 GB/sec (128-bit DDR @7001MHz)
+* Max Shared Memory: 100 KiB/SM, 48 KiB/Block
+* L2 Cache Size: 24576 KiB
+* Maximum Active Blocks: 24/SM
+* Maximum Active Threads: 1536/SM, 1024/Block
+* Available Registers: 65536/SM, 65536/Block
+* ECC Enabled: No
+
+# Log
+
+```
+```
+
+# Benchmark Results
+---- Running Tests ----
+Running main() from /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-build/third_party/googletest/src/googletest/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from DenseNNTest
+[ RUN      ] DenseNNTest.GemmBasicTest
+[       OK ] DenseNNTest.GemmBasicTest (0 ms)
+[ RUN      ] DenseNNTest.GemmMultiSampleTest
+[       OK ] DenseNNTest.GemmMultiSampleTest (0 ms)
+[----------] 2 tests from DenseNNTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+Running main() from /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-build/third_party/googletest/src/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from GemvTest
+[ RUN      ] GemvTest.BasicTest
+[       OK ] GemvTest.BasicTest (0 ms)
+[ RUN      ] GemvTest.NegativeValues
+[       OK ] GemvTest.NegativeValues (0 ms)
+[ RUN      ] GemvTest.RectangularMatrix
+[       OK ] GemvTest.RectangularMatrix (0 ms)
+[ RUN      ] GemvTest.TallMatrix
+[       OK ] GemvTest.TallMatrix (0 ms)
+[----------] 4 tests from GemvTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+Running main() from /home/janars1/Labs/labs/project-4sp4-2025-21/build/_deps/googlebenchmark-build/third_party/googletest/src/googletest/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from DenseNNTest
+[ RUN      ] DenseNNTest.GemmBasicTest
+[       OK ] DenseNNTest.GemmBasicTest (0 ms)
+[ RUN      ] DenseNNTest.GemmMultiSampleTest
+[       OK ] DenseNNTest.GemmMultiSampleTest (0 ms)
+[----------] 2 tests from DenseNNTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+---- Plotting ----
